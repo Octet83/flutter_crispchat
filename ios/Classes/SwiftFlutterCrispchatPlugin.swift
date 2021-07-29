@@ -38,7 +38,7 @@ public class SwiftFlutterCrispChatPlugin: NSObject, FlutterPlugin {
     let websiteId = arguments["websiteId"] as! String
     
     CrispSDK.configure(websiteID: websiteId)
-    Crisp.locale = "fr"
+    CrispSDK.locale = "fr"
     result(nil)
   }
   
